@@ -22,7 +22,8 @@ URL-REGEX,^https:\/\/gw\.line\.naver\.jp\/tr\/event$,REJECT
 # Smart Channel 與內部 API (legy.line-apps.com)
 URL-REGEX,^https:\/\/legy\.line-apps\.com:443\/ext\/lgfp\/lad\/v\d$,REJECT
 URL-REGEX,^https:\/\/legy\.line-apps\.com:443\/ext\/smartch\/banner\/sch\/v\d$,REJECT
-URL-REGEX,^https:\/\/legy\.line-apps\.com\/line\.gcs\.GcsModuleService\/GetModulesByModuleIds$,REJECT
+# URL-REGEX,^https:\/\/legy\.line-apps\.com\/line\.gcs\.GcsModuleService\/GetModulesByModuleIds$,REJECT
+URL-REGEX,^https:\/\/legy\.line-apps\.com\/line\.gcs\.GcsModuleService\/GetModulesByModuleIds\?.*?(ad|banner|smartch|lad),REJECT
 URL-REGEX,^https:\/\/legy\.line-apps\.com:443\/tr\/event$,REJECT
 
 # 其他 API 與追蹤
