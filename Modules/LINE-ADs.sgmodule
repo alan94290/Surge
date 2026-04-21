@@ -22,7 +22,6 @@ URL-REGEX,^https:\/\/gw\.line\.naver\.jp\/tr\/event$,REJECT
 # Smart Channel 與內部 API (legy.line-apps.com)
 URL-REGEX,^https:\/\/legy\.line-apps\.com:443\/ext\/lgfp\/lad\/v\d$,REJECT
 URL-REGEX,^https:\/\/legy\.line-apps\.com:443\/ext\/smartch\/banner\/sch\/v\d$,REJECT
-# URL-REGEX,^https:\/\/legy\.line-apps\.com\/line\.gcs\.GcsModuleService\/GetModulesByModuleIds$,REJECT
 URL-REGEX,^https:\/\/legy\.line-apps\.com\/line\.gcs\.GcsModuleService\/GetModulesByModuleIds\?.*?(ad|banner|smartch|lad),REJECT
 URL-REGEX,^https:\/\/legy\.line-apps\.com:443\/tr\/event$,REJECT
 
@@ -40,10 +39,6 @@ URL-REGEX,^https:\/\/cix\.line-apps\.com\/R\d\?,REJECT
 # ==========================================
 # 區域 2: 圖片與媒體廣告 (obs / scdn / ad)
 # ==========================================
-# URL-REGEX,^https:\/\/obs\.line-scdn\.net\/0h[a-zA-Z0-9_-]{50}[a-zA-Z0-9_-]*,REJECT-DROP
-# URL-REGEX,^https:\/\/obs\.line-scdn\.net\/0h.+\/(o|m)\d+x\d+$,REJECT-DROP
-# URL-REGEX,^https:\/\/obs\.line-scdn\.net\/0hGH\d,REJECT-DROP
-# === 只擋含廣告關鍵字的 obs 圖片（修正後版本）===
 URL-REGEX,^https:\/\/obs\.line-scdn\.net\/0h[a-zA-Z0-9_-]{50}[a-zA-Z0-9_-]*(ad|banner|promo|campaign|smartch|lad),REJECT-DROP
 URL-REGEX,^https:\/\/obs\.line-scdn\.net\/0h.+\/\d+p\.mp4$,REJECT
 URL-REGEX,^https:\/\/obs\.line-scdn\.net\/r\/linecrs\/.+\/m180x180$,REJECT-TINYGIF
